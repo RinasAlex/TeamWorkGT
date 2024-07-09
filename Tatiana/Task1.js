@@ -1,3 +1,3 @@
 db.users.countDocuments(
-    { country: { $nin: ["Germany", "France"] }}
+    { country: { $in: ["Germany", "France"] }}
 )
