@@ -13,5 +13,6 @@ db.users.aggregate([
             total: { $count: {} }
         }
     },
-    { $limit: 1 }
+    { $limit: 1 },
+    { $project: { _id: 0, total: 1, fullname: 1 } }
 ])
