@@ -1,5 +1,9 @@
-db.users.aggregate([
-  { $match: { country: { $in: ["Germany", "France"] } } },
-  { $group: { _id: null, total: { $sum: 1 } } },
-  { $project: { _id: 0, total: 1 } },
-]);
+db.products.updateMany(
+  {
+    $and: [{ quantity: { $gte: 5 } }, { price: { $lt: 1000 } }],
+  },
+  {
+    $mul: { price: 0.85 },
+    $inc: { quantity: -1 },
+  }
+);
