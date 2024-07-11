@@ -7,3 +7,4 @@ db.products.insertMany([
   
   { name: "Product 3", price: 300, category: "Category C" }
 ])
+// test
