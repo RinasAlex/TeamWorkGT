@@ -1,16 +1,16 @@
 db.products.insertMany([
   {
-    title: "dress",
+    title: "Dress",
     price: 10,
     quantity: 50,
   },
   {
-    title: "t-shirt",
+    title: "T-shirt",
     price: 20,
     quantity: 20,
   },
   {
-    title: "bag",
+    title: "Bag",
     price: 30,
     quantity: 30,
   },
