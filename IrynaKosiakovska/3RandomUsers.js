@@ -8,7 +8,7 @@ db.posts.aggregate([
         }
     }, {
         $match: {
-            "author.is_blocked": { $ne: true },
+            author.is_blocked: { $ne: true },
         }
     },
     { $sample: { size: 3 } },
